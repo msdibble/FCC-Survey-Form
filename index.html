@@ -29,18 +29,20 @@
             <label id="name-label">Name</label>
             <input type="name" class="form-control" id="name" placeholder="Enter your name">
         </div>
+        <br>
         <div class="email-group">
             <label id="email-label">E-mail</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your e-mail">
+            <input type="email" class="form-control" id="email" placeholder="Enter your e-mail" required="" autofocus=""
+             oninvalid="setCustomValidity('Plz enter on Alphabets ')"
+             onchange="try{setCustomValidity('')}catch(e){}" />
         </div>
-        <!--HTML validation error for incorrect email format-->
+        <br>
 
         <div class="age-group">
             <label id="number-label">Age(optional)</label>
-            <input type="age" class="form-control" id="number" placeholder="Age">
+            <input type="number" class="form-control" id="number" placeholder="Age" min="0" max="150">
         </div>
-
-        <!--HTML validation error for incorrect age-->
+        <br>
 
         <!--Dropdown menu-->
         <div class="role-group">
@@ -136,6 +138,8 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </form>
+    <br>
+    <br>
 
 </body>
 
